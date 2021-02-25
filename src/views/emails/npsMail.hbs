@@ -1,0 +1,85 @@
+<style>
+  .text-normal {
+    font-size: 1rem;
+  }
+
+  .text-larger {
+    font-size: 1.5rem;
+  }
+
+  #container {
+    width: 50rem;
+    height: 30rem;
+    padding: 3rem;
+    background-color: #fdd9dc;
+  }
+
+  #email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+  }
+
+  #answers {
+    width: 24rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .option {
+    padding: .625rem;
+    background-color: #8257e6;
+    color: #fff;
+    border-radius: 0.375rem;
+    width: 1rem;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  #level {
+    display: flex;
+    justify-content: space-between;
+    margin: .625rem;
+    width: 24rem;
+  }
+</style>
+
+<div id="container">
+  <div id="email">
+    <label class="text-normal">Hello, <strong>{{ name }}</strong>! How are you?</label>
+
+    <h3 class="text-larger">{{ title }}</h3>
+    <br />
+    <strong class="text-normal">{{ description }}</strong>
+
+    <div id="level">
+      <span>Unlikely</span>
+      <span>Very Likely</span>
+    </div>
+
+    <div id="answers">
+      <a class="option" href="{{ link }}/1?u={{ user_id }}">1</a>
+      <a class="option" href="{{ link }}/2?u={{ user_id }}">2</a>
+      <a class="option" href="{{ link }}/3?u={{ user_id }}">3</a>
+      <a class="option" href="{{ link }}/4?u={{ user_id }}">4</a>
+      <a class="option" href="{{ link }}/5?u={{ user_id }}">5</a>
+      <a class="option" href="{{ link }}/6?u={{ user_id }}">6</a>
+      <a class="option" href="{{ link }}/7?u={{ user_id }}">7</a>
+      <a class="option" href="{{ link }}/8?u={{ user_id }}">8</a>
+      <a class="option" href="{{ link }}/9?u={{ user_id }}">9</a>
+      <a class="option" href="{{ link }}/10?u={{ user_id }}">10</a>
+    </div>
+
+    <br />
+    <br />
+
+    <strong class="text-normal">Your opinion's very important to us!</strong>
+    <h3 class="text-larger">Team | <strong>NLW</strong></h3>
+  </div>
+</div>
